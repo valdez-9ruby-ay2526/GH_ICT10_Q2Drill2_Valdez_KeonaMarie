@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Club Checker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <py-config>
+    [[fetch]]
+    files = ["./main.py"]
+    </py-config>
+</head>
+
+<body>
+    <h1>🪩 Dance Club Checker 🪩</h1>
+    <p>Enter your full name to see if you are a part of Dance Club 💃🕺</p>
+
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" placeholder="Enter first name">
+    <br>
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" placeholder="Enter last name">
+    <br><br>
+    <button py-click="check_member">CHECK</button>
+
+    <div id="result"></div>
+
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
